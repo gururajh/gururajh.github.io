@@ -9,56 +9,40 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Professional Summary 
+ISTQB Certified QA Engineer with 10 years of experience in testing across mobile, cloud, and medical device domains. Expertise in API testing, Test Plan/Protocol creation, and defect management. Skilled in both Agile (SAFe) and traditional development lifecycles. Hands-on experience in validating cloud-deployed applications and contributing to high-quality releases within regulated environments like ISO 13485 and IEC 62304.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Education
+* M.Tech in Data Science and Engineering, Birla Institute of Technology and Science, Pilani (2020 - 2023)
+* B.E. in Electronics and Communication Engineering, Visvesvaraya Technological University (2009 - 2013)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Certifications
+* ISTQB Certified – Foundation Level 
+* ISTQB Certified – Agile Extension 
+* SAFe Agile (In Progress)
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Work experience
+* **Senior Quality Assurance Engineer** | Oracle India Pvt. Ltd | *May 2022 – Present*
+  * Tested core features of cloud-based mobile applications in healthcare domain across Android & iOS.
+  * Designed & executed manual and automated tests ensuring compliance with release quality gates.
+  * Created test strategies and reusable test data models for faster test execution and regression cycles.
+  * Performed API testing and validated REST endpoints for various service integrations.
+  * Collaborated within Agile (SAFe) teams; attended sprint planning, reviews, and retrospectives.
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* **Senior Quality Engineer** | QualiTest India Pvt. Ltd (Client: Philips MR) | *Nov 2018 – May 2022*
+  * Assisted in Improving Automation coverage and Code Coverage by 20% using BDD(Gherkin) and Specflow.
+  * Wrote comprehensive test plans and executed test cases for web-based and mobile healthcare apps.
+  * Created documentation in alignment with GDP – protocols, test results, deviation reports.
+
+* **Software Test Engineer / Verification Engineer** | Cardiac Design Labs | *Dec 2013 – Apr 2018*
+  * Performed validation of medical device software for regulatory compliance (ISO 13485, IEC 62304).
+  * Tested cloud-synced applications and APIs for medical telemetry devices.
+  * Documented product validation artifacts including user guides and training material.
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Skills & Tools
+* **Testing:** Manual Testing, Mobile Testing (Android & iOS), Cloud App Testing 
+* **API Testing:** Postman  
+* **Automation Tools:** Playwright (TypeScript), Selenium (basics) 
+* **Test Management:** Jira, Bugzilla 
+* **Standards:** ISO 13485, IEC 62304, HIPAA, DICOM, HL7 
+* **Languages:** Python, TypeScript, JavaScript
