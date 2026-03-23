@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #8da9d4;
+  --bs-primary: #3b659c;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 141, 169, 212;
+  --bs-primary-rgb: 59, 101, 156;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #8da9d4;
-  --bs-link-hover-color: #6a8ebf;
+  --bs-link-color: #3b659c;
+  --bs-link-hover-color: #2c4f7c;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -10940,7 +10940,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #8da9d4;
+  background-color: #3b659c;
 }
 
 .dev-icons {
@@ -10972,4 +10972,78 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/* Custom Premium Optimizations */
+.badge-soft {
+  background-color: rgba(59, 101, 156, 0.1);
+  color: #3b659c;
+  border: 1px solid rgba(59, 101, 156, 0.2);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 50rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.btn-resume {
+  background-color: #3b659c;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-resume:hover {
+  background-color: #2c4f7c;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-resume i {
+  margin-right: 0.75rem;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+.certification-card {
+  border-left: 4px solid #3b659c;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+footer {
+  padding: 2rem 0;
+  background: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6c757d;
 }
