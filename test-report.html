@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Sample Test Report - OpenCart" />
+        <meta name="author" content="Gururaj Hegde" />
+        <title>Sample Test Report - Gururaj Hegde</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            body { padding-top: 3rem; padding-bottom: 3rem; }
+            .content-container { max-width: 1000px; margin: auto; padding: 2rem; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+        </style>
+    </head>
+    <body id="page-top" class="bg-light">
+        <div class="content-container">
+            <a href="index.html" class="btn btn-outline-primary mb-4"><i class="fas fa-arrow-left me-2"></i>Back to Portfolio</a>
+            
+            <h1 class="mb-4">Test Execution Summary</h1>
+            
+            <div class="mb-5">
+                <p><strong>Project</strong>: OpenCart E-Commerce Platform v4.0.2.x<br>
+                <strong>Date</strong>: 23.03.2026<br>
+                <strong>Prepared By</strong>: Gururaj Hegde<br>
+                <strong>Environment</strong>: Staging (<code>staging.opencart.local</code>), PHP 8.2, MySQL 8<br>
+                <strong>Test Cycle</strong>: Release Candidate 2 (RC2) Regression</p>
+            </div>
+
+            <h3 class="mb-3">1. High-Level Summary</h3>
+            <p>The RC2 regression testing phase for the upcoming OpenCart minor release is complete. We primarily focused on validating the newly refactored Extension Installer and standard regression sweeps across the Checkout, Product Catalog, and Admin Dashboard modules.</p>
+            <p>The core application is highly stable. The build is a <strong>GO for Production release</strong>, assuming the single High-severity coupon bug (OC-4192) in the checkout flow is hotfixed prior to the final tag.</p>
+
+            <h3 class="mb-3 mt-5">2. Execution Metrics</h3>
+            <ul class="list-group mb-4" style="max-width: 400px;">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Total Test Cases Run
+                    <span class="badge bg-primary rounded-pill">156</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Passed
+                    <span class="badge bg-success rounded-pill">148 (94.8%)</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Failed
+                    <span class="badge bg-danger rounded-pill">5 (3.2%)</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Blocked/Skipped
+                    <span class="badge bg-warning text-dark rounded-pill">3 (1.9%)</span>
+                </li>
+            </ul>
+
+            <h3 class="mb-3 mt-5">3. Defect Overview</h3>
+            <p>Logged <strong>7 defects</strong> total during this cycle. The Development team successfully patched 2 blocker-level SEO URL routing bugs found earlier in the week.</p>
+            <div class="table-responsive mb-4">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Severity</th>
+                            <th>Logged</th>
+                            <th>Closed</th>
+                            <th>Open</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Critical</strong></td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>SEO URL routing 404s (OC-4188); fixed and verified on Tuesday.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>High</strong></td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td><strong>(OC-4192)</strong> 500 Error when fixed coupon > cart subtotal. Fix is currently in PR review.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Medium</strong></td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Extension installer timeout on large ZIPs > 10MB.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Low</strong></td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>Alpha characters allowed in phone fields; minor CSS padding mismatch on the category module.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="mb-3 mt-5">4. Module Breakdown</h3>
+            <div class="table-responsive mb-4">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Module</th>
+                            <th>Coverage</th>
+                            <th>Status</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Checkout & Cart</strong></td>
+                            <td>100%</td>
+                            <td>CONDITIONAL PASS</td>
+                            <td>Stable, except for the coupon edge-case mentioned above. Guest checkout and registered checkout flows both passed.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Extension Installer</strong></td>
+                            <td>~90%</td>
+                            <td>PASS</td>
+                            <td>Skipped 3 tests regarding FTP uploads because the staging server was rejecting passive FTP connections. Tested via local upload instead.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Product Catalog</strong></td>
+                            <td>100%</td>
+                            <td>PASS</td>
+                            <td>Options, attributes, and discount tiers calculated perfectly.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Admin Dashboard</strong></td>
+                            <td>100%</td>
+                            <td>PASS</td>
+                            <td>User role permissions enforced correctly.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="mb-3 mt-5">5. Risks / Recommendations</h3>
+            <ul>
+                <li><strong>Risk</strong>: The FTP configuration on Staging prevented full testing of the remote extension installation protocol.</li>
+                <li><strong>Sign-off</strong>: Approved for Release upon merging and verifying the fix for OC-4192.</li>
+            </ul>
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
