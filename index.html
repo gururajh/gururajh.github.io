@@ -13,15 +13,17 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- AOS Animation CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css?v=2.1" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Gururaj Hegde</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="Profile Picture of Gururaj Hegde" loading="lazy" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/gururaj-profile.png" alt="Profile Picture of Gururaj Hegde" loading="lazy" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -38,7 +40,7 @@
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
-            <section class="resume-section" id="about">
+            <section class="resume-section" id="about" data-aos="fade-up">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
                         Gururaj
@@ -63,7 +65,7 @@
             </section>
             <hr class="m-0" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
+            <section class="resume-section" id="experience" data-aos="fade-up">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5 hover-lift">
@@ -92,9 +94,18 @@
             </section>
             <hr class="m-0" />
             <!-- Education-->
-            <section class="resume-section" id="education">
+            <section class="resume-section" id="education" data-aos="fade-up">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5 hover-lift">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Birla Institute of Technology and Science, Pilani (BITS Pilani)</h3>
+                            <div class="subheading mb-3">Master of Technology - MTech</div>
+                            <div>Data Science and Engineering</div>
+                            <p>Grade: 6.3</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jan 2020 - Apr 2023</span></div>
+                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5 hover-lift">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Visvesvaraya Technological University (VTU)</h3>
@@ -106,7 +117,7 @@
             </section>
             <hr class="m-0" />
             <!-- Skills-->
-            <section class="resume-section" id="skills">
+            <section class="resume-section" id="skills" data-aos="fade-up">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
@@ -142,7 +153,7 @@
             </section>
             <hr class="m-0" />
             <!-- Certifications-->
-            <section class="resume-section" id="certifications">
+            <section class="resume-section" id="certifications" data-aos="fade-up">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Certifications & Credentials</h2>
                     <div class="row">
@@ -189,7 +200,7 @@
             </section>
             <hr class="m-0" />
             <!-- Projects-->
-            <section class="resume-section" id="projects">
+            <section class="resume-section" id="projects" data-aos="fade-up">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects & Portfolio</h2>
                     
@@ -228,7 +239,9 @@
                                 <span class="badge-soft">OpenCart</span>
                             </div>
                             <p>A comprehensive document detailing testing scenarios, expected results, and test steps for the OpenCart E-Commerce platform. Demonstrates structured QA methodologies, specifically focusing on boundary testing and tax/shipping configurations.</p>
-                            <a href="test-cases.html" class="btn btn-primary" target="_blank">View Test Cases</a>
+                            <a href="test-cases.html" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt me-1"></i> View Test Cases
+                            </a>
                         </div>
                     </div>
 
@@ -241,7 +254,9 @@
                                 <span class="badge-soft">Reporting</span>
                             </div>
                             <p>A formal summary report of test cycle execution metrics, defect density, pass/fail ratios, and release readiness recommendations designed for stakeholder review during an OpenCart regression cycle.</p>
-                            <a href="test-report.html" class="btn btn-primary" target="_blank">View Test Report</a>
+                            <a href="test-report.html" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-chart-bar me-1"></i> View Test Report
+                            </a>
                         </div>
                     </div>
 
@@ -254,7 +269,9 @@
                                 <span class="badge-soft">Agile</span>
                             </div>
                             <p>Detailed bug reports for issues identified in OpenCart, highlighting clear steps to reproduce, environment specifics, and expected vs. actual behavior.</p>
-                            <a href="bug-report.html" class="btn btn-primary" target="_blank">View Bug Reports</a>
+                            <a href="bug-report.html" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-bug me-1"></i> View Bug Reports
+                            </a>
                         </div>
                     </div>
 
@@ -268,6 +285,15 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- AOS Animation JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+        </script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
